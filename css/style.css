@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+.section1, .section2, .section3 {
+    background-color: gray;
+    border: 1px solid black;
+    width: 200px;
+    float: left;
+    margin: 20px;
+    position: relative;
+
+}
+.section1 .chik{
+background-color: pink;
+/* float: right; */
+/* clear: both; */
+padding: 5px;
+border: 2px solid black;
+position: absolute;
+top: 0;
+right: 0;
+}
+.section1 .lorem1, .section2 .lorem2, .section3 .lorem3{
+    padding: 40px;
+}
+section{
+    /* float: left; */
+    clear: left;
+    /* margin: 10px; */
+}
+.section2 .beef{
+    background-color:red;
+    /* float: right;
+    clear: both; */
+    padding: 5px;
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+    .section3 .sushi{
+        background-color:yellow;
+        /* float: right; */
+        /* clear: both; */
+        padding: 5px;
+        border:2px solid black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        }
+    @media (min-width:992px){
+        .section1, .section2, .section3 {
+            background-color: gray;
+            border: 1px solid black;
+            width: 28%;
+            float: left;
+            margin: 20px;
+            position: relative;
+        }}
+@media (min-width:768px) and (max-width:991px){
+    .section1{
+        width: 43%;
+    }
+    .section2{
+        width: 43%;
+    }
+    .section3{
+        width: 96%;
+    }
+}
+@media (max-width:767px){
+    .section1{
+        width: 90%;
+    
+    }
+    .section2{
+        width: 90%;
+        margin: 30 auto;
+    }
+    .section3{
+        width: 90%;
+        margin: 30 auto;
+    }
+}
